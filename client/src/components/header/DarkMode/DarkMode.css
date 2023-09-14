@@ -1,0 +1,37 @@
+a:visited {
+  text-decoration: none;
+}
+
+.container-icons {
+  width: 60px;
+  height: 22px;
+  border: 2.5px solid #3d8f6686;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  background-color: #3cb371;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.light-icon,
+.dark-icon {
+  display: flex;
+  align-items: center;
+  width: 20px !important;
+  height: 20px !important;
+  color: #ffa716;
+}
+
+.light-icon {
+  margin-right: 0 !important;
+}

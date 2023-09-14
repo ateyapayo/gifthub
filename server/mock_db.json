@@ -1,0 +1,618 @@
+{
+  "trip": {
+    "weatherConditions": "",
+    "title": "September Holiday",
+    "destination": "SomePlaceNice"
+  },
+  "items": [
+    {
+      "id": 0,
+      "title": "Raincoat",
+      "appropriateWeather": "cold",
+      "tags": ["jacket", "clothing"]
+    },
+    {
+      "id": 1,
+      "title": "Running Shoes",
+      "appropriateWeather": "any",
+      "tags": ["clothing", "shoes", "sports"]
+    },
+    {
+      "id": 2,
+      "title": "Socks",
+      "appropriateWeather": "any",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 3,
+      "title": "Umbrella",
+      "appropriateWeather": "hot",
+      "tags": ["accessories"]
+    },
+    {
+      "id": 4,
+      "title": "Toothbrush",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "hygiene"]
+    },
+    {
+      "id": 5,
+      "title": "Toothpaste",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "hygiene"]
+    },
+    {
+      "id": 6,
+      "title": "Deodorant",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "hygiene"]
+    },
+    {
+      "id": 7,
+      "title": "Sunscreen",
+      "appropriateWeather": "hot",
+      "tags": ["essentials", "skin-care"]
+    },
+    {
+      "id": 8,
+      "title": "Swimsuit",
+      "appropriateWeather": "hot",
+      "tags": ["clothing", "swimming"]
+    },
+    {
+      "id": 9,
+      "title": "Goggles",
+      "appropriateWeather": "any",
+      "tags": ["accessories", "swimming"]
+    },
+    {
+      "id": 10,
+      "title": "Swim Cap",
+      "appropriateWeather": "any",
+      "tags": ["accessories", "swimming"]
+    },
+    {
+      "id": 11,
+      "title": "Towel",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 12,
+      "title": "Hiking Boots",
+      "appropriateWeather": "any",
+      "tags": ["clothing", "shoes", "hiking"]
+    },
+    {
+      "id": 13,
+      "title": "Backpack",
+      "appropriateWeather": "any",
+      "tags": ["accessories", "hiking"]
+    },
+    {
+      "id": 14,
+      "title": "Water Bottle",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 15,
+      "title": "Map",
+      "appropriateWeather": "any",
+      "tags": ["hiking"]
+    },
+    {
+      "id": 16,
+      "title": "Compass",
+      "appropriateWeather": "any",
+      "tags": ["hiking"]
+    },
+    {
+      "id": 18,
+      "title": "Weightlifting Belt",
+      "appropriateWeather": "any",
+      "tags": ["accessories", "weightlifting"]
+    },
+    {
+      "id": 19,
+      "title": "Gym Clothes",
+      "appropriateWeather": "any",
+      "tags": ["clothing", "sports", "weightlifting"]
+    },
+    {
+      "id": 21,
+      "title": "First Aid Kit",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 22,
+      "title": "Charger",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "electronics"]
+    },
+    {
+      "id": 23,
+      "title": "Hat",
+      "appropriateWeather": "hot",
+      "tags": ["accessories"]
+    },
+    {
+      "id": 24,
+      "title": "Sunglasses",
+      "appropriateWeather": "hot",
+      "tags": ["accessories"]
+    },
+    {
+      "id": 25,
+      "title": "Portable Charger",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 26,
+      "title": "Sleeping Bag",
+      "appropriateWeather": "cold",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 27,
+      "title": "Tent",
+      "appropriateWeather": "any",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 28,
+      "title": "Insect Repellent",
+      "appropriateWeather": "hot",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 29,
+      "title": "Flashlight",
+      "appropriateWeather": "any",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 30,
+      "title": "Portable Stove",
+      "appropriateWeather": "any",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 31,
+      "title": "Cutlery Set",
+      "appropriateWeather": "any",
+      "tags": ["camping"]
+    },
+    {
+      "id": 32,
+      "title": "Waterproof Matches",
+      "appropriateWeather": "any",
+      "tags": ["hiking"]
+    },
+    {
+      "id": 33,
+      "title": "Yoga Mat",
+      "appropriateWeather": "any",
+      "tags": ["sports"]
+    },
+    {
+      "id": 34,
+      "title": "Resistance Bands",
+      "appropriateWeather": "any",
+      "tags": ["weightlifting", "sports"]
+    },
+    {
+      "id": 35,
+      "title": "Water Purification Tablets",
+      "appropriateWeather": "any",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 36,
+      "title": "Thermal Underwear",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 37,
+      "title": "Hand Warmers",
+      "appropriateWeather": "cold",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 38,
+      "title": "Flip Flops",
+      "appropriateWeather": "hot",
+      "tags": ["clothing", "swimming"]
+    },
+    {
+      "id": 39,
+      "title": "Headphones",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 40,
+      "title": "Notebook and Pen",
+      "appropriateWeather": "any",
+      "tags": ["stationary"]
+    },
+    {
+      "id": 41,
+      "title": "Portable Water Filter",
+      "appropriateWeather": "any",
+      "tags": ["hiking", "camping"]
+    },
+    {
+      "id": 42,
+      "title": "Snacks",
+      "appropriateWeather": "any",
+      "tags": ["nutrition"]
+    },
+    {
+      "id": 43,
+      "title": "Passport",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "documents"]
+    },
+    {
+      "id": 44,
+      "title": "Travel Insurance Documents",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "documents"]
+    },
+    {
+      "id": 45,
+      "title": "Medication",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "health"]
+    },
+    {
+      "id": 46,
+      "title": "Travel Pillow",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "comfort"]
+    },
+    {
+      "id": 47,
+      "title": "Eye Mask",
+      "appropriateWeather": "any",
+      "tags": ["comfort"]
+    },
+    {
+      "id": 48,
+      "title": "Ear Plugs",
+      "appropriateWeather": "any",
+      "tags": ["comfort"]
+    },
+    {
+      "id": 49,
+      "title": "Reusable Shopping Bag",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "eco-friendly"]
+    },
+    {
+      "id": 50,
+      "title": "Reusable Coffee Cup",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "eco-friendly"]
+    },
+    {
+      "id": 51,
+      "title": "Travel Adapter",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "electronics"]
+    },
+    {
+      "id": 52,
+      "title": "Camera",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 53,
+      "title": "Camera Memory Card",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 54,
+      "title": "Travel Journal",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 55,
+      "title": "Reading Material",
+      "appropriateWeather": "any",
+      "tags": ["entertainment"]
+    },
+    {
+      "id": 56,
+      "title": "Boarding Pass/Tickets",
+      "appropriateWeather": "any",
+      "tags": ["essentials", "documents"]
+    },
+    {
+      "id": 57,
+      "title": "Laptop",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 58,
+      "title": "Laptop Charger",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 59,
+      "title": "Mobile Phone",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 60,
+      "title": "Mobile Phone Charger",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 61,
+      "title": "Power Strip",
+      "appropriateWeather": "any",
+      "tags": ["electronics"]
+    },
+    {
+      "id": 62,
+      "title": "Travel Guidebook",
+      "appropriateWeather": "any",
+      "tags": ["entertainment"]
+    },
+    {
+      "id": 63,
+      "title": "Wallet",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 64,
+      "title": "Credit/Debit Cards",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 65,
+      "title": "Local Currency",
+      "appropriateWeather": "any",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 66,
+      "title": "Aloe Vera Gel",
+      "appropriateWeather": "hot",
+      "tags": ["skin-care", "sun"]
+    },
+    {
+      "id": 67,
+      "title": "Lip Balm with SPF",
+      "appropriateWeather": "hot",
+      "tags": ["skin-care", "sun"]
+    },
+    {
+      "id": 68,
+      "title": "Wide-brimmed Hat",
+      "appropriateWeather": "hot",
+      "tags": ["accessories", "sun"]
+    },
+    {
+      "id": 69,
+      "title": "Lightweight Long-sleeved Shirt",
+      "appropriateWeather": "hot",
+      "tags": ["clothing", "sun"]
+    },
+    {
+      "id": 70,
+      "title": "Cooling Towel",
+      "appropriateWeather": "hot",
+      "tags": ["comfort", "sun"]
+    },
+    {
+      "id": 71,
+      "title": "Hydration Pack",
+      "appropriateWeather": "hot",
+      "tags": ["hydration"]
+    },
+    {
+      "id": 72,
+      "title": "Electrolyte Tablets/Packets",
+      "appropriateWeather": "hot",
+      "tags": ["nutrition", "hydration"]
+    },
+    {
+      "id": 73,
+      "title": "Insulated Water Bottle",
+      "appropriateWeather": "hot",
+      "tags": ["hydration"]
+    },
+    {
+      "id": 74,
+      "title": "Portable Fan",
+      "appropriateWeather": "hot",
+      "tags": ["comfort"]
+    },
+    {
+      "id": 75,
+      "title": "Misting Spray Bottle",
+      "appropriateWeather": "hot",
+      "tags": ["comfort"]
+    },
+    {
+      "id": 76,
+      "title": "Lightweight and Breathable Pants",
+      "appropriateWeather": "hot",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 77,
+      "title": "After-sun Lotion",
+      "appropriateWeather": "hot",
+      "tags": ["skin-care", "sun"]
+    },
+    {
+      "id": 78,
+      "title": "SPF Clothing",
+      "appropriateWeather": "hot",
+      "tags": ["clothing", "sun"]
+    },
+    {
+      "id": 79,
+      "title": "Beach Umbrella",
+      "appropriateWeather": "hot",
+      "tags": ["accessories", "beach", "sun"]
+    },
+    {
+      "id": 80,
+      "title": "Beach Mat or Blanket",
+      "appropriateWeather": "hot",
+      "tags": ["accessories", "beach"]
+    },
+    {
+      "id": 81,
+      "title": "Sarong or Cover-up",
+      "appropriateWeather": "hot",
+      "tags": ["clothing", "beach"]
+    },
+    {
+      "id": 82,
+      "title": "Cooling Neck Wrap",
+      "appropriateWeather": "hot",
+      "tags": ["comfort", "sun"]
+    },
+    {
+      "id": 83,
+      "title": "Solar Charger",
+      "appropriateWeather": "hot",
+      "tags": ["electronics", "eco-friendly"]
+    },
+    {
+      "id": 84,
+      "title": "Thick Wool Socks",
+      "appropriateWeather": "cold",
+      "tags": ["clothing", "footwear"]
+    },
+    {
+      "id": 85,
+      "title": "Insulated Boots",
+      "appropriateWeather": "cold",
+      "tags": ["clothing", "footwear"]
+    },
+    {
+      "id": 86,
+      "title": "Thermal Gloves",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 87,
+      "title": "Beanie or Wool Hat",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 88,
+      "title": "Scarf",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 89,
+      "title": "Ear Muffs",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 90,
+      "title": "Insulated Jacket",
+      "appropriateWeather": "cold",
+      "tags": ["clothing"]
+    },
+    {
+      "id": 91,
+      "title": "Snow Pants",
+      "appropriateWeather": "cold",
+      "tags": ["clothing", "snow"]
+    },
+    {
+      "id": 92,
+      "title": "Ski/Snowboard Equipment",
+      "appropriateWeather": "cold",
+      "tags": ["sports", "snow"]
+    },
+    {
+      "id": 93,
+      "title": "Hand and Toe Warmers",
+      "appropriateWeather": "cold",
+      "tags": ["hiking"]
+    },
+    {
+      "id": 94,
+      "title": "Moisturizer",
+      "appropriateWeather": "cold",
+      "tags": ["essentials", "skin-care"]
+    },
+    {
+      "id": 95,
+      "title": "Hot Water Flask",
+      "appropriateWeather": "cold",
+      "tags": ["hydration"]
+    },
+    {
+      "id": 96,
+      "title": "Snow Goggles",
+      "appropriateWeather": "cold",
+      "tags": ["accessories", "snow"]
+    },
+    {
+      "id": 97,
+      "title": "Snow Boots",
+      "appropriateWeather": "cold",
+      "tags": ["clothing", "footwear"]
+    },
+    {
+      "id": 98,
+      "title": "Lip Balm",
+      "appropriateWeather": "cold",
+      "tags": ["skin-care"]
+    },
+    {
+      "id": 99,
+      "title": "Ice Scraper",
+      "appropriateWeather": "cold",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 101,
+      "title": "Antifreeze",
+      "appropriateWeather": "cold",
+      "tags": ["essentials"]
+    },
+    {
+      "id": 102,
+      "title": "Ski Pass",
+      "appropriateWeather": "cold",
+      "tags": ["documents", "sports"]
+    },
+    {
+      "id": 103,
+      "title": "Hot Drink Mixes",
+      "appropriateWeather": "cold",
+      "tags": ["nutrition"]
+    }
+  ],
+  "packedItems": [
+    
+  ]
+}

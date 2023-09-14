@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+  outline-color: #ffa500;
+  outline-width: 2px;
+}
+
+.theme {
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: #f1f1f1;
+  color: #262626;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
