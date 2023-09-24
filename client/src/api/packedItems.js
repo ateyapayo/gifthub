@@ -1,10 +1,10 @@
-const getPackedItems = async () => {
+export const getPackedItems = async () => {
   const res = await fetch("http://localhost:3001/packed-items");
   const items = await res.json();
   return items;
 };
 
-const addPackedItem = async (packedItem) => {
+export const addPackedItem = async (packedItem) => {
   const res = await fetch("http://localhost:3001/packed-items", {
     method: "POST",
     headers: {
@@ -17,7 +17,7 @@ const addPackedItem = async (packedItem) => {
   return addedItem;
 };
 
-const removePackedItem = async (packedItemId) => {
+export const removePackedItem = async (packedItemId) => {
   const res = await fetch(
     `http://localhost:3001/packed-items/${packedItemId}`,
     {
@@ -31,7 +31,7 @@ const removePackedItem = async (packedItemId) => {
   return res;
 };
 
-const updateQuantity = async (itemId, quantity) => {
+export const updateQuantity = async (itemId, quantity) => {
   const res = await fetch(`http://localhost:3001/packed-items/${itemId}`, {
     method: "PATCH",
     headers: {
