@@ -3,7 +3,3 @@ export const getItems = async () => {
   const items = await res.json();
   return items;
 };
-
-module.exports = {
-  getItems,
-};

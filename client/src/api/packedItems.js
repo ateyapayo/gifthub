@@ -44,9 +44,3 @@ export const updateQuantity = async (itemId, quantity) => {
   return updatedItem;
 };
 
-module.exports = {
-  getPackedItems,
-  addPackedItem,
-  removePackedItem,
-  updateQuantity,
-};

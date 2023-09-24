@@ -16,8 +16,3 @@ export const updateTrip = async (trip) => {
   const updatedTrip = await res.json();
   return updatedTrip;
 };
-
-module.exports = {
-  getTrip,
-  updateTrip,
-};
