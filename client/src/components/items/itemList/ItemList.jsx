@@ -1,13 +1,15 @@
 import { useState } from "react";
 
 import {
-  MdOutlineList,
-  MdOutlineSportsVolleyball,
-  MdOutlineHiking,
-  MdStars,
+  MdFamilyRestroom,
   MdOutlineAddCircle,
   MdOutlineRemoveCircle,
+  MdOutlineViewList,
 } from "react-icons/md";
+
+import { FaUserFriends, FaUserTie } from "react-icons/fa";
+
+import { PiListDashesBold } from "react-icons/pi";
 
 import {
   addPackedItem,
@@ -39,17 +41,17 @@ const ItemList = (props) => {
     .reduce((sum, value) => sum + value, 0);
 
   const counterEssentials = props.items
-    .filter((item) => item.tags.includes("essentials"))
+    .filter((item) => item.tags.includes("family"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
   const counterSports = props.items
-    .filter((item) => item.tags.includes("sports"))
+    .filter((item) => item.tags.includes("friends"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
   const counterHiking = props.items
-    .filter((item) => item.tags.includes("hiking"))
+    .filter((item) => item.tags.includes("colleagues"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
@@ -97,7 +99,7 @@ const ItemList = (props) => {
           disabled={props.items.length === 0}
           onClick={() => handleTagFilter("all")}
         >
-          <MdOutlineList />
+          <PiListDashesBold className="icon-category" />
           All
           <span className="counter">
             {props.packed && counterAll > 0 && `(${counterAll})`}
@@ -106,15 +108,13 @@ const ItemList = (props) => {
         <button
           title="See essential items"
           className={`${
-            selectedTag === "essentials" && props.items.length > 0
-              ? "active"
-              : ""
+            selectedTag === "family" && props.items.length > 0 ? "active" : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("essentials")}
+          onClick={() => handleTagFilter("family")}
         >
-          <MdStars />
-          Essentials{" "}
+          <MdFamilyRestroom className="icon-category" />
+          Family{" "}
           <span className="counter">
             {props.packed && counterEssentials > 0 && `(${counterEssentials})`}
           </span>
@@ -122,13 +122,13 @@ const ItemList = (props) => {
         <button
           title="See sports items"
           className={`${
-            selectedTag === "sports" && props.items.length > 0 ? "active" : ""
+            selectedTag === "friends" && props.items.length > 0 ? "active" : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("sports")}
+          onClick={() => handleTagFilter("friends")}
         >
-          <MdOutlineSportsVolleyball />
-          Sports{" "}
+          <FaUserFriends className="icon-category" />
+          Friends{" "}
           <span className="counter">
             {props.packed && counterSports > 0 && `(${counterSports})`}
           </span>
@@ -136,12 +136,14 @@ const ItemList = (props) => {
         <button
           title="See hiking items"
           className={`${
-            selectedTag === "hiking" && props.items.length > 0 ? "active" : ""
+            selectedTag === "colleagues" && props.items.length > 0
+              ? "active"
+              : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("hiking")}
+          onClick={() => handleTagFilter("colleagues")}
         >
-          <MdOutlineHiking /> Hiking{" "}
+          <FaUserTie className="icon-category colleagues" /> Colleagues{" "}
           <span className="counter">
             {props.packed && counterHiking > 0 && `(${counterHiking})`}
           </span>

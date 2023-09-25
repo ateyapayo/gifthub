@@ -1,6 +1,6 @@
 import "./Trip.css";
 
-import { getTrip, updateTrip } from "../../api/trip";
+import { getTarget, updateTarget } from "../../api/target";
 import { useEffect, useState } from "react";
 
 import { PiSun, PiCloudRain } from "react-icons/pi";
@@ -11,12 +11,12 @@ const Trip = (props) => {
   });
 
   const fetchTrip = async () => {
-    const trip = await getTrip();
+    const trip = await getTarget();
     setTrip(trip);
   };
 
   const onClickWeather = async (weather) => {
-    const updatedTrip = await updateTrip({
+    const updatedTrip = await updateTarget({
       ...trip,
       weatherConditions: weather,
     });

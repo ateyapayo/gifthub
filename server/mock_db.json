@@ -1,618 +1,375 @@
 {
-  "trip": {
-    "weatherConditions": "",
-    "title": "September Holiday",
-    "destination": "SomePlaceNice"
+  "target": {
+    "gender": ""
   },
   "items": [
     {
-      "id": 0,
-      "title": "Raincoat",
-      "appropriateWeather": "cold",
-      "tags": ["jacket", "clothing"]
-    },
-    {
       "id": 1,
-      "title": "Running Shoes",
-      "appropriateWeather": "any",
-      "tags": ["clothing", "shoes", "sports"]
+      "title": "Fitness Watch",
+      "gender": "non-binary",
+      "tags": ["watch", "timepiece", "accessory", "family"]
     },
     {
       "id": 2,
-      "title": "Socks",
-      "appropriateWeather": "any",
-      "tags": ["clothing"]
+      "title": "Festive Baking Kit",
+      "gender": "non-binary",
+      "tags": ["family", "baking", "Christmas"]
     },
     {
       "id": 3,
-      "title": "Umbrella",
-      "appropriateWeather": "hot",
-      "tags": ["accessories"]
+      "title": "Movie Night Gift Basket",
+      "gender": "non-binary",
+      "tags": ["friends", "entertainment", "snacks"]
     },
     {
       "id": 4,
-      "title": "Toothbrush",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "hygiene"]
+      "title": "Cozy Blanket",
+      "gender": "non-binary",
+      "tags": ["family"]
     },
     {
       "id": 5,
-      "title": "Toothpaste",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "hygiene"]
+      "title": "Bicycle with Training Wheels",
+      "gender": "non-binary",
+      "tags": ["family", "kids", "toys", "outdoor", "exercise"]
     },
     {
       "id": 6,
-      "title": "Deodorant",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "hygiene"]
+      "title": "Interactive Robot Toy",
+      "gender": "non-binary",
+      "tags": ["family", "kids", "toys", "robotics", "fun"]
     },
     {
       "id": 7,
-      "title": "Sunscreen",
-      "appropriateWeather": "hot",
-      "tags": ["essentials", "skin-care"]
+      "title": "Scented Candle",
+      "gender": "non-binary",
+      "tags": ["friends", "relaxation", "home"]
     },
     {
       "id": 8,
-      "title": "Swimsuit",
-      "appropriateWeather": "hot",
-      "tags": ["clothing", "swimming"]
+      "title": "Fujifilm Camera",
+      "gender": "non-binary",
+      "tags": ["family", "electronics", "lovers"]
     },
     {
       "id": 9,
-      "title": "Goggles",
-      "appropriateWeather": "any",
-      "tags": ["accessories", "swimming"]
+      "title": "Customised Mouse Pad",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "personalised"]
     },
     {
       "id": 10,
-      "title": "Swim Cap",
-      "appropriateWeather": "any",
-      "tags": ["accessories", "swimming"]
+      "title": "Festive Scented Candles",
+      "gender": "non-binary",
+      "tags": ["family", "relaxation", "Christmas"]
     },
     {
       "id": 11,
-      "title": "Towel",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
+      "title": "Desk Organiser Set",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "organization"]
     },
     {
       "id": 12,
-      "title": "Hiking Boots",
-      "appropriateWeather": "any",
-      "tags": ["clothing", "shoes", "hiking"]
+      "title": "Cozy Slippers",
+      "gender": "non-binary",
+      "tags": ["family", "clothing"]
     },
     {
       "id": 13,
-      "title": "Backpack",
-      "appropriateWeather": "any",
-      "tags": ["accessories", "hiking"]
+      "title": "Craft Beer Tasting Kit",
+      "gender": "male",
+      "tags": ["beverages", "family"]
     },
     {
       "id": 14,
-      "title": "Water Bottle",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
+      "title": "Personalised Keychain",
+      "gender": "non-binary",
+      "tags": ["friends", "personalised", "accessories"]
     },
+
     {
       "id": 15,
-      "title": "Map",
-      "appropriateWeather": "any",
-      "tags": ["hiking"]
+      "title": "Magnetic Desk Sculpture",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "decor"]
     },
     {
       "id": 16,
-      "title": "Compass",
-      "appropriateWeather": "any",
-      "tags": ["hiking"]
+      "title": "Customised Name Necklace",
+      "gender": "female",
+      "tags": ["accessories", "friends", "personalised"]
+    },
+    {
+      "id": 17,
+      "title": "Vegan Treats Gift Box",
+      "gender": "non-binary",
+      "tags": ["family", "colleagues", "plants"]
     },
     {
       "id": 18,
-      "title": "Weightlifting Belt",
-      "appropriateWeather": "any",
-      "tags": ["accessories", "weightlifting"]
+      "title": "Video Game Gift Card",
+      "gender": "non-binary",
+      "tags": ["friends", "gaming", "entertainment"]
     },
     {
       "id": 19,
-      "title": "Gym Clothes",
-      "appropriateWeather": "any",
-      "tags": ["clothing", "sports", "weightlifting"]
+      "title": "Customised Photo Album",
+      "gender": "non-binary",
+      "tags": ["friends", "memories", "personalised"]
+    },
+    {
+      "id": 20,
+      "title": "Desk Clock",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "decor"]
     },
     {
       "id": 21,
-      "title": "First Aid Kit",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
+      "title": "Coffee Mug with Funny Quote",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office humor", "mugs", "office"]
     },
     {
       "id": 22,
-      "title": "Charger",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "electronics"]
+      "title": "Gourmet Chocolate Gift Basket",
+      "gender": "non-binary",
+      "tags": ["family", "colleagues"]
     },
     {
       "id": 23,
-      "title": "Hat",
-      "appropriateWeather": "hot",
-      "tags": ["accessories"]
+      "title": "Personalised Friendship Mug",
+      "gender": "non-binary",
+      "tags": ["friends", "personalised", "beverages"]
     },
     {
       "id": 24,
-      "title": "Sunglasses",
-      "appropriateWeather": "hot",
-      "tags": ["accessories"]
+      "title": "Gourmet Biscuits",
+      "gender": "non-binary",
+      "tags": ["biscuits", "sweets", "treats"]
     },
     {
       "id": 25,
-      "title": "Portable Charger",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Desk Organiser and Accessories Set",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "organisation"]
     },
     {
       "id": 26,
-      "title": "Sleeping Bag",
-      "appropriateWeather": "cold",
-      "tags": ["hiking", "camping"]
+      "title": "Stress Relief Squeeze Balls",
+      "gender": "non-binary",
+      "tags": ["colleagues", "stress relief", "office"]
     },
     {
       "id": 27,
-      "title": "Tent",
-      "appropriateWeather": "any",
-      "tags": ["hiking", "camping"]
+      "title": "Spa Day Voucher",
+      "gender": "non-binary",
+      "tags": ["family", "lovers", "hygiene"]
     },
     {
       "id": 28,
-      "title": "Insect Repellent",
-      "appropriateWeather": "hot",
-      "tags": ["essentials"]
+      "title": "Scooter",
+      "gender": "non-binary",
+      "tags": ["family", "toys", "outdoor", "fun"]
     },
     {
       "id": 29,
-      "title": "Flashlight",
-      "appropriateWeather": "any",
-      "tags": ["hiking", "camping"]
+      "title": "Luxury Spa Gift Set",
+      "gender": "female",
+      "tags": ["relaxation", "self-care", "lovers", "family"]
     },
     {
       "id": 30,
-      "title": "Portable Stove",
-      "appropriateWeather": "any",
-      "tags": ["hiking", "camping"]
+      "title": "Hot Cocoa Gift Basket",
+      "gender": "non-binary",
+      "tags": ["family", "beverages", "Christmas"]
     },
     {
       "id": 31,
-      "title": "Cutlery Set",
-      "appropriateWeather": "any",
-      "tags": ["camping"]
+      "title": "Elegant Pearl Jewelry Set",
+      "gender": "female",
+      "tags": ["accessories", "lovers", "family"]
     },
     {
       "id": 32,
-      "title": "Waterproof Matches",
-      "appropriateWeather": "any",
-      "tags": ["hiking"]
+      "title": "Astronomy Telescope",
+      "gender": "non-binary",
+      "tags": ["family", "science", "stargazing"]
     },
+
     {
       "id": 33,
-      "title": "Yoga Mat",
-      "appropriateWeather": "any",
-      "tags": ["sports"]
+      "title": "Motivational Daily Planner",
+      "gender": "non-binary",
+      "tags": ["friends", "office", "productivity"]
     },
+
     {
       "id": 34,
-      "title": "Resistance Bands",
-      "appropriateWeather": "any",
-      "tags": ["weightlifting", "sports"]
+      "title": "Funny Office Desk Sign",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office humor", "decor"]
     },
     {
       "id": 35,
-      "title": "Water Purification Tablets",
-      "appropriateWeather": "any",
-      "tags": ["hiking", "camping"]
+      "title": "Customised Desk Nameplate",
+      "gender": "non-binary",
+      "tags": ["colleagues", "office", "personalised"]
     },
     {
       "id": 36,
-      "title": "Thermal Underwear",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
+      "title": "Luxury Watch",
+      "gender": "non-binary",
+      "tags": ["accessories", "lovers", "family"]
     },
     {
       "id": 37,
-      "title": "Hand Warmers",
-      "appropriateWeather": "cold",
-      "tags": ["essentials"]
+      "title": "Bluetooth Speaker",
+      "gender": "non-binary",
+      "tags": ["family"]
     },
     {
       "id": 38,
-      "title": "Flip Flops",
-      "appropriateWeather": "hot",
-      "tags": ["clothing", "swimming"]
+      "title": "Classic Guitar",
+      "gender": "non-binary",
+      "tags": ["family", "toys", "music", "creative"]
     },
     {
       "id": 39,
-      "title": "Headphones",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Science Experiment Kit",
+      "gender": "non-binary",
+      "tags": ["toys", "family", "kids", "science", "learning"]
     },
+
     {
       "id": 40,
-      "title": "Notebook and Pen",
-      "appropriateWeather": "any",
-      "tags": ["stationary"]
+      "title": "Leather Wallet",
+      "gender": "non-binary",
+      "tags": ["family", "essentials"]
     },
     {
       "id": 41,
-      "title": "Portable Water Filter",
-      "appropriateWeather": "any",
-      "tags": ["hiking", "camping"]
+      "title": "Tool Set for DIY Enthusiasts",
+      "gender": "male",
+      "tags": ["tools", "family"]
     },
+
     {
       "id": 42,
-      "title": "Snacks",
-      "appropriateWeather": "any",
-      "tags": ["nutrition"]
+      "title": "Yoga and Meditation Kit",
+      "gender": "non-binary",
+      "tags": ["health", "wellness"]
     },
+
     {
       "id": 43,
-      "title": "Passport",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "documents"]
+      "title": "Escape Room in a Box",
+      "gender": "non-binary",
+      "tags": ["friends", "entertainment", "puzzles"]
     },
     {
       "id": 44,
-      "title": "Travel Insurance Documents",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "documents"]
+      "title": "Gourmet Wine and Cheese Basket",
+      "gender": "non-binary",
+      "tags": ["food", "beverages", "family"]
     },
     {
       "id": 45,
-      "title": "Medication",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "health"]
+      "title": "Jeans Jacket",
+      "gender": "male",
+      "tags": ["clothes", "family"]
     },
     {
       "id": 46,
-      "title": "Travel Pillow",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "comfort"]
+      "title": "Laptop Stand",
+      "gender": "non-binary",
+      "tags": ["accessories"]
     },
     {
       "id": 47,
-      "title": "Eye Mask",
-      "appropriateWeather": "any",
-      "tags": ["comfort"]
+      "title": "Blanket Hoodie",
+      "gender": "non-binary",
+      "tags": ["clothes", "winter", "family"]
     },
     {
       "id": 48,
-      "title": "Ear Plugs",
-      "appropriateWeather": "any",
-      "tags": ["comfort"]
+      "title": "Reusable Take Away Cup",
+      "gender": "non-binary",
+      "tags": ["tea", "friends"]
     },
     {
       "id": 49,
-      "title": "Reusable Shopping Bag",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "eco-friendly"]
+      "title": "Ancestry DNA Test",
+      "gender": "non-binary",
+      "tags": ["test", "dna", "family tree", "family"]
     },
     {
       "id": 50,
-      "title": "Reusable Coffee Cup",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "eco-friendly"]
+      "title": "Board Game Night Set",
+      "gender": "non-binary",
+      "tags": ["friends", "entertainment", "games"]
     },
     {
       "id": 51,
-      "title": "Travel Adapter",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "electronics"]
+      "title": "Personalised Photo Puzzle",
+      "gender": "non-binary",
+      "tags": ["friends", "personalised", "puzzles"]
     },
     {
       "id": 52,
-      "title": "Camera",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Subscription to a Streaming Service",
+      "gender": "non-binary",
+      "tags": ["friends", "entertainment", "movies", "TV shows"]
     },
     {
       "id": 53,
-      "title": "Camera Memory Card",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Self-Care Gift Basket",
+      "gender": "female",
+      "tags": ["friends", "self-care", "relaxation"]
     },
     {
       "id": 54,
-      "title": "Travel Journal",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
+      "title": "Customised Friendship Bracelets",
+      "gender": "non-binary",
+      "tags": ["friends", "personalised", "accessories"]
     },
     {
       "id": 55,
-      "title": "Reading Material",
-      "appropriateWeather": "any",
-      "tags": ["entertainment"]
+      "title": "Book Club Membership",
+      "gender": "non-binary",
+      "tags": ["friends", "books", "reading"]
     },
     {
       "id": 56,
-      "title": "Boarding Pass/Tickets",
-      "appropriateWeather": "any",
-      "tags": ["essentials", "documents"]
+      "title": "Outdoor Adventure Experience",
+      "gender": "non-binary",
+      "tags": ["friends", "adventure", "outdoor"]
     },
     {
       "id": 57,
-      "title": "Laptop",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Cooking Class Voucher",
+      "gender": "non-binary",
+      "tags": ["friends", "cooking", "culinary"]
     },
     {
       "id": 58,
-      "title": "Laptop Charger",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Cute Matching Mugs for couples",
+      "gender": "non-binary",
+      "tags": ["family", "couples"]
     },
     {
       "id": 59,
-      "title": "Mobile Phone",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
+      "title": "Earings",
+      "gender": "female",
+      "tags": ["family", "beauty", "fashion", "jewellery"]
     },
     {
       "id": 60,
-      "title": "Mobile Phone Charger",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
-    },
-    {
-      "id": 61,
-      "title": "Power Strip",
-      "appropriateWeather": "any",
-      "tags": ["electronics"]
-    },
-    {
-      "id": 62,
-      "title": "Travel Guidebook",
-      "appropriateWeather": "any",
-      "tags": ["entertainment"]
-    },
-    {
-      "id": 63,
-      "title": "Wallet",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
-    },
-    {
-      "id": 64,
-      "title": "Credit/Debit Cards",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
-    },
-    {
-      "id": 65,
-      "title": "Local Currency",
-      "appropriateWeather": "any",
-      "tags": ["essentials"]
-    },
-    {
-      "id": 66,
-      "title": "Aloe Vera Gel",
-      "appropriateWeather": "hot",
-      "tags": ["skin-care", "sun"]
-    },
-    {
-      "id": 67,
-      "title": "Lip Balm with SPF",
-      "appropriateWeather": "hot",
-      "tags": ["skin-care", "sun"]
-    },
-    {
-      "id": 68,
-      "title": "Wide-brimmed Hat",
-      "appropriateWeather": "hot",
-      "tags": ["accessories", "sun"]
-    },
-    {
-      "id": 69,
-      "title": "Lightweight Long-sleeved Shirt",
-      "appropriateWeather": "hot",
-      "tags": ["clothing", "sun"]
-    },
-    {
-      "id": 70,
-      "title": "Cooling Towel",
-      "appropriateWeather": "hot",
-      "tags": ["comfort", "sun"]
-    },
-    {
-      "id": 71,
-      "title": "Hydration Pack",
-      "appropriateWeather": "hot",
-      "tags": ["hydration"]
-    },
-    {
-      "id": 72,
-      "title": "Electrolyte Tablets/Packets",
-      "appropriateWeather": "hot",
-      "tags": ["nutrition", "hydration"]
-    },
-    {
-      "id": 73,
-      "title": "Insulated Water Bottle",
-      "appropriateWeather": "hot",
-      "tags": ["hydration"]
-    },
-    {
-      "id": 74,
-      "title": "Portable Fan",
-      "appropriateWeather": "hot",
-      "tags": ["comfort"]
-    },
-    {
-      "id": 75,
-      "title": "Misting Spray Bottle",
-      "appropriateWeather": "hot",
-      "tags": ["comfort"]
-    },
-    {
-      "id": 76,
-      "title": "Lightweight and Breathable Pants",
-      "appropriateWeather": "hot",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 77,
-      "title": "After-sun Lotion",
-      "appropriateWeather": "hot",
-      "tags": ["skin-care", "sun"]
-    },
-    {
-      "id": 78,
-      "title": "SPF Clothing",
-      "appropriateWeather": "hot",
-      "tags": ["clothing", "sun"]
-    },
-    {
-      "id": 79,
-      "title": "Beach Umbrella",
-      "appropriateWeather": "hot",
-      "tags": ["accessories", "beach", "sun"]
-    },
-    {
-      "id": 80,
-      "title": "Beach Mat or Blanket",
-      "appropriateWeather": "hot",
-      "tags": ["accessories", "beach"]
-    },
-    {
-      "id": 81,
-      "title": "Sarong or Cover-up",
-      "appropriateWeather": "hot",
-      "tags": ["clothing", "beach"]
-    },
-    {
-      "id": 82,
-      "title": "Cooling Neck Wrap",
-      "appropriateWeather": "hot",
-      "tags": ["comfort", "sun"]
-    },
-    {
-      "id": 83,
-      "title": "Solar Charger",
-      "appropriateWeather": "hot",
-      "tags": ["electronics", "eco-friendly"]
-    },
-    {
-      "id": 84,
-      "title": "Thick Wool Socks",
-      "appropriateWeather": "cold",
-      "tags": ["clothing", "footwear"]
-    },
-    {
-      "id": 85,
-      "title": "Insulated Boots",
-      "appropriateWeather": "cold",
-      "tags": ["clothing", "footwear"]
-    },
-    {
-      "id": 86,
-      "title": "Thermal Gloves",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 87,
-      "title": "Beanie or Wool Hat",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 88,
-      "title": "Scarf",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 89,
-      "title": "Ear Muffs",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 90,
-      "title": "Insulated Jacket",
-      "appropriateWeather": "cold",
-      "tags": ["clothing"]
-    },
-    {
-      "id": 91,
-      "title": "Snow Pants",
-      "appropriateWeather": "cold",
-      "tags": ["clothing", "snow"]
-    },
-    {
-      "id": 92,
-      "title": "Ski/Snowboard Equipment",
-      "appropriateWeather": "cold",
-      "tags": ["sports", "snow"]
-    },
-    {
-      "id": 93,
-      "title": "Hand and Toe Warmers",
-      "appropriateWeather": "cold",
-      "tags": ["hiking"]
-    },
-    {
-      "id": 94,
-      "title": "Moisturizer",
-      "appropriateWeather": "cold",
-      "tags": ["essentials", "skin-care"]
-    },
-    {
-      "id": 95,
-      "title": "Hot Water Flask",
-      "appropriateWeather": "cold",
-      "tags": ["hydration"]
-    },
-    {
-      "id": 96,
-      "title": "Snow Goggles",
-      "appropriateWeather": "cold",
-      "tags": ["accessories", "snow"]
-    },
-    {
-      "id": 97,
-      "title": "Snow Boots",
-      "appropriateWeather": "cold",
-      "tags": ["clothing", "footwear"]
-    },
-    {
-      "id": 98,
-      "title": "Lip Balm",
-      "appropriateWeather": "cold",
-      "tags": ["skin-care"]
-    },
-    {
-      "id": 99,
-      "title": "Ice Scraper",
-      "appropriateWeather": "cold",
-      "tags": ["essentials"]
-    },
-    {
-      "id": 101,
-      "title": "Antifreeze",
-      "appropriateWeather": "cold",
-      "tags": ["essentials"]
-    },
-    {
-      "id": 102,
-      "title": "Ski Pass",
-      "appropriateWeather": "cold",
-      "tags": ["documents", "sports"]
-    },
-    {
-      "id": 103,
-      "title": "Hot Drink Mixes",
-      "appropriateWeather": "cold",
-      "tags": ["nutrition"]
+      "title": "Pizza Cutting Set",
+      "gender": "male",
+      "tags": ["family", "food", "italy"]
     }
   ],
-  "packedItems": [
-    
-  ]
+
+  "packedItems": []
 }

@@ -78,6 +78,14 @@
   color: #121212;
 }
 
+.icon-category {
+  width: 19px !important;
+}
+
+.colleagues {
+  width: 15px !important;
+}
+
 .item-list-filters button:last-child {
   margin-right: 13px;
 }
