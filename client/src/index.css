@@ -15,11 +15,11 @@ body {
 }
 
 .light {
-  background-color: #f1f1f1;
-  color: #262626;
+  background-color: #e4002b;
+  color: #ffffff;
 }
 
 .dark {
   background-color: #121212;
-  color: #f0f0f0;
+  color: #ffffff;
 }

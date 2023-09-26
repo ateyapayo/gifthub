@@ -13,7 +13,7 @@
 }
 
 .dark .search-container {
-  border-color: #f0f0f0;
+  border-color: #ffffff;
 }
 
 .search-container input {
@@ -28,7 +28,7 @@
 .dark .search-container,
 .dark .search-container input {
   background-color: transparent;
-  color: #f0f0f0;
+  color: #ffffff;
 }
 
 .search-container input:active {
@@ -38,6 +38,7 @@
 .search-icon {
   margin-left: 0.25em;
   font-size: 25px;
+  color: black;
 }
 
 .search-container button {

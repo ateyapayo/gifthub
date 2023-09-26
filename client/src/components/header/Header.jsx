@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className="opening">
         <h3 aria-label="Your destination" title="Your destination">
-          Ho, Ho Ho! Christmas is coming soon!
+          "Ho, Ho Ho! Christmas is coming soon!
         </h3>
         <h3 aria-label="Your trip title" title="Your trip title">
           {" "}
@@ -28,7 +28,7 @@ const Header = () => {
         <h3>
           {" "}
           Discover the perfect presents with our curated collection of 100+ gift
-          ideas.
+          ideas."
         </h3>
       </div>
     </>

@@ -18,6 +18,8 @@
 }
 
 .gender p {
+  color: #000000;
+  font-size: 17px;
   margin-right: 12px;
   font-weight: 700;
 }
@@ -28,9 +30,10 @@
   align-items: center;
   margin-right: 12px;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid #000000;
+  background-color: white;
+  color: #000000;
   border-radius: 50px;
-  background-color: transparent;
 }
 
 .gender button:hover {
@@ -43,20 +46,23 @@
 }
 
 .male {
+  color: black !important;
   background-color: #89c0de !important;
 }
 
 .female {
-  background-color: #ffbaba !important;
+  color: black !important;
+  background-color: #f5bcf3 !important;
 }
 
 .non-binary {
-  background-color: #fce46a !important;
+  color: black !important;
+  background: #ffa915 !important;
 }
 
 .dark button {
-  color: #f0f0f0;
-  border: 2px solid #f0f0f0;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .dark .male,
@@ -78,6 +84,8 @@
 }
 
 .clear-gender {
+  font-weight: 500;
+  font-size: 15px;
   text-decoration: underline;
   cursor: pointer;
 }

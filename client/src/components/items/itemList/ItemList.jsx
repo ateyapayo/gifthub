@@ -142,7 +142,7 @@ const ItemList = (props) => {
           onClick={() => handleTagFilter("must-have")}
         >
           <FaHandHoldingHeart className="icon-category" />
-          Must-have{" "}
+          MustHave{" "}
           <span className="counter">
             {props.packed && counterEssentials > 0 && `(${counterEssentials})`}
           </span>

@@ -44,15 +44,19 @@
 }
 
 .suggested-container {
-  background-color: #2e8e5913;
+  background-color: #f9192c;
 }
 
 .suitcase-container {
-  background-color: #015d9211;
+  background-color: #c8e8c8;
 }
 
 .dark .suggested-container,
 .dark .suitcase-container {
-  border: 1.5px solid #f0f0f0;
+  border: 1.5px solid #ffffff;
   background-color: transparent;
+}
+
+.title-list {
+  color: black;
 }

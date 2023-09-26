@@ -5,7 +5,7 @@ a:visited {
 .container-icons {
   width: 60px;
   height: 22px;
-  border: 2.5px solid #3d8f6686;
+  border: 2.5px solid #ffffff;
   border-radius: 45px;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@ a:visited {
 .ball {
   width: 25px;
   height: 25px;
-  background-color: #3cb371;
+  background-color: #ffffff;
   border-radius: 50%;
   position: absolute;
 }
@@ -29,7 +29,7 @@ a:visited {
   align-items: center;
   width: 20px !important;
   height: 20px !important;
-  color: #ffa716;
+  color: #ffcc15;
 }
 
 .light-icon {

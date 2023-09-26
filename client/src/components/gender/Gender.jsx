@@ -31,7 +31,7 @@ const Gender = (props) => {
   return (
     <div className="gender">
       <div className="weather">
-        <p>Gender</p>
+        <p>Gender:</p>
         <div className="gender-buttons">
           <button
             title="Non-binary"

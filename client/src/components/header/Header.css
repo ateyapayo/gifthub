@@ -19,13 +19,13 @@
 
 .logo a,
 .logo a:visited {
-  color: #262626;
+  color: white;
   text-decoration: none;
 }
 
 .dark .logo a,
 .dark .logo a:visited {
-  color: #fafafa;
+  color: #000000;
 }
 
 .dark .dark .logo .header h1 {
@@ -36,4 +36,8 @@
   width: 28px;
   height: 28px;
   margin-right: 12px;
+}
+
+.opening {
+  color: black;
 }

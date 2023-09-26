@@ -13,12 +13,12 @@ footer p {
 
 footer a {
   font-weight: 700;
-  color: #006daa;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
 footer a:visited {
-  color: #006daa;
+  color: white;
   text-decoration: none;
 }
 

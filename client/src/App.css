@@ -20,10 +20,10 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #3cb371;
+  background: #249d24;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3cb371;
+  background: #249d24;
 }

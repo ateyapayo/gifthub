@@ -16,6 +16,7 @@
   border-radius: 12px;
   padding: 12px 16px;
   background-color: #fff;
+  border: 1.5px solid black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,7 +41,7 @@
 
 .item-list .item p {
   margin: 0;
-  color: #006daa;
+  color: black;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -92,8 +93,8 @@
 
 .dark .item-list-filters button {
   background-color: transparent;
-  border-color: #f0f0f0;
-  color: #f0f0f0;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .counter {
@@ -114,7 +115,7 @@
 
 /* Indication of which category filter is selected/active. */
 .active {
-  background-color: #3cb371 !important;
+  background-color: #249d24 !important;
   color: #fff !important;
   font-weight: 600 !important;
 }
@@ -137,7 +138,7 @@
 
 .dark .item {
   background-color: transparent;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #ffffff;
 }
 
 .dark .item p {
@@ -160,12 +161,12 @@
 .remove-item {
   width: 100%;
   height: 100%;
-  color: #006daa;
+  color: #1465b5;
   position: absolute;
 }
 
 .add-item:hover {
-  color: #3cb371;
+  color: #ffa915;
 }
 
 .dark .remove-item,
@@ -174,7 +175,7 @@
 }
 
 .dark .add-item:hover {
-  color: #108dd5;
+  color: #3594f3;
 }
 
 .remove-item:hover {
@@ -202,14 +203,14 @@
 .quantity-container select {
   margin-right: 1em;
   background-color: transparent;
-  border: 1px solid #005282;
+  border: 1px solid black;
   border-radius: 8px;
   width: 47px;
   height: 28px;
   text-align: center;
   font-size: 13px;
   font-weight: 600;
-  color: #005282;
+  color: black;
 }
 
 .dark .quantity-container select {
