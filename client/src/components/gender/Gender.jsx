@@ -30,44 +30,42 @@ const Gender = (props) => {
 
   return (
     <div className="gender">
-      <div className="weather">
-        <p>Gender:</p>
-        <div className="gender-buttons">
-          <button
-            title="Non-binary"
-            className={`${target.gender === "non-binary" && "non-binary"}`}
-            aria-label="Non-binary gender button"
-            onClick={() => onClickGender("non-binary")}
-          >
-            <IoMaleFemaleSharp />
-          </button>
-          <button
-            title="Female"
-            className={`${target.gender === "female" && "female"}`}
-            aria-label="Female gender button"
-            onClick={() => onClickGender("female")}
-          >
-            <IoFemaleSharp />
-          </button>
-          <button
-            title="Male"
-            className={`${target.gender === "male" && "male"}`}
-            aria-label="Male gender button"
-            onClick={() => onClickGender("male")}
-          >
-            <IoMaleSharp />
-          </button>
+      <p>Gender:</p>
+      <div className="gender-buttons">
+        <button
+          title="Non-binary"
+          className={`${target.gender === "non-binary" && "non-binary"}`}
+          aria-label="Non-binary gender button"
+          onClick={() => onClickGender("non-binary")}
+        >
+          <IoMaleFemaleSharp />
+        </button>
+        <button
+          title="Female"
+          className={`${target.gender === "female" && "female"}`}
+          aria-label="Female gender button"
+          onClick={() => onClickGender("female")}
+        >
+          <IoFemaleSharp />
+        </button>
+        <button
+          title="Male"
+          className={`${target.gender === "male" && "male"}`}
+          aria-label="Male gender button"
+          onClick={() => onClickGender("male")}
+        >
+          <IoMaleSharp />
+        </button>
 
-          {target.gender && (
-            <span
-              className="clear-gender"
-              aria-label="Reset gender button"
-              onClick={() => onClickGender("")}
-            >
-              Reset
-            </span>
-          )}
-        </div>
+        {target.gender && (
+          <span
+            className="clear-gender"
+            aria-label="Reset gender button"
+            onClick={() => onClickGender("")}
+          >
+            Reset
+          </span>
+        )}
       </div>
     </div>
   );

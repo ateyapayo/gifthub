@@ -37,27 +37,24 @@ const ItemList = (props) => {
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
-  const counterEssentials = props.items
-    .filter((item) => item.tags.includes("must-have"))
-    .map((item) => item.quantity)
-    .reduce((sum, value) => sum + value, 0);
-
-  const counterSports = props.items
-    .filter((item) => item.tags.includes("lifestyle"))
-    .map((item) => item.quantity)
-    .reduce((sum, value) => sum + value, 0);
-
-  const counterHiking = props.items
+  const counterFoods = props.items
     .filter((item) => item.tags.includes("foods"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
-  const handleAddToPackedItems = async (item) => {
+  const counterLifestyle = props.items
+    .filter((item) => item.tags.includes("lifestyle"))
+    .map((item) => item.quantity)
+    .reduce((sum, value) => sum + value, 0);
+
+  const counterMustHave = props.items
+    .filter((item) => item.tags.includes("must-have"))
+    .map((item) => item.quantity)
+    .reduce((sum, value) => sum + value, 0);
+
+  const handleAddToWishlist = async (item) => {
     const packedItem = {
-      id: item.id,
-      title: item.title,
-      appropriateWeather: item.appropriateWeather,
-      tags: item.tags,
+      ...item,
       quantity: 1,
     };
 
@@ -69,12 +66,12 @@ const ItemList = (props) => {
     }
   };
 
-  const handleRemoveToPackedItems = async (item) => {
-    const packedItemId = item.id;
+  const handleRemoveFromWishlist = async (item) => {
+    const wishlistItemId = item.id;
 
     try {
-      await removeFromWishlist(packedItemId);
-      props.update(packedItemId);
+      await removeFromWishlist(wishlistItemId);
+      props.update(wishlistItemId);
     } catch (error) {
       console.error("Error removing packed item:", error);
     }
@@ -112,7 +109,7 @@ const ItemList = (props) => {
         >
           <IoFastFoodSharp className="icon-category" /> Foods{" "}
           <span className="counter">
-            {props.packed && counterHiking > 0 && `(${counterHiking})`}
+            {props.packed && counterFoods > 0 && `(${counterFoods})`}
           </span>
         </button>{" "}
         <button
@@ -128,7 +125,7 @@ const ItemList = (props) => {
           <IoFlashSharp className="icon-category" />
           Lifestyle{" "}
           <span className="counter">
-            {props.packed && counterSports > 0 && `(${counterSports})`}
+            {props.packed && counterLifestyle > 0 && `(${counterLifestyle})`}
           </span>
         </button>
         <button
@@ -144,7 +141,7 @@ const ItemList = (props) => {
           <FaHandHoldingHeart className="icon-category" />
           MustHave{" "}
           <span className="counter">
-            {props.packed && counterEssentials > 0 && `(${counterEssentials})`}
+            {props.packed && counterMustHave > 0 && `(${counterMustHave})`}
           </span>
         </button>
       </div>
@@ -185,7 +182,7 @@ const ItemList = (props) => {
               {(!props.packed && (
                 <button
                   title={`Add ${item.title} to the suitcase`}
-                  onClick={() => !isItemPacked && handleAddToPackedItems(item)}
+                  onClick={() => !isItemPacked && handleAddToWishlist(item)}
                 >
                   <MdOutlineAddCircle
                     className={`add-item ${isItemPacked && "disabled"}`}
@@ -194,7 +191,7 @@ const ItemList = (props) => {
               )) || (
                 <button
                   title={`Remove ${item.title} to the suitcase`}
-                  onClick={() => handleRemoveToPackedItems(item)}
+                  onClick={() => handleRemoveFromWishlist(item)}
                 >
                   <MdOutlineRemoveCircle className="remove-item" />
                 </button>

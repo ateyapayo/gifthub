@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="logo">
-          <a title="Logo" href="/" aria-label="MyPack website" tabIndex="0">
+          <a title="Logo" href="/" aria-label="GiftHub web-app" tabIndex="0">
             <HiGift />
             <h1>GiftHub</h1>
           </a>
@@ -27,13 +27,10 @@ const Header = () => {
       </header>
 
       <div className="opening">
-        <h3 aria-label="Your destination" title="Your destination">
+        <h3>
           "Ho, Ho Ho! Christmas is just <span>{daysLeft} days</span> away!
         </h3>
-        <h3 aria-label="Your trip title" title="Your trip title">
-          {" "}
-          Stuck on what to give your loved ones? Fear not!
-        </h3>
+        <h3> Stuck on what to give your loved ones? Fear not!</h3>
         <h3>
           {" "}
           Discover the perfect presents with our curated collection of 100+ gift
