@@ -48,6 +48,10 @@
   font-size: 22px;
 }
 
+.dark .search-icon {
+  color: white !important;
+}
+
 @media screen and (max-width: 1145px) {
   .search-container {
     width: 195px;

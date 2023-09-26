@@ -24,6 +24,10 @@
   font-weight: 700;
 }
 
+.dark .gender p {
+  color: white;
+}
+
 .gender button {
   display: flex;
   justify-content: center;
@@ -57,22 +61,23 @@
 
 .non-binary {
   color: black !important;
-  background: #ffa915 !important;
+  background: #ffea71 !important;
 }
 
 .dark button {
-  color: #ffffff;
+  color: white;
+  background-color: transparent;
   border: 2px solid #ffffff;
 }
 
 .dark .male,
 .dark .female,
 .dark .non-binary {
-  color: #121212;
+  color: #121212 !important;
 }
 
 .dark .female {
-  border: 2px solid #ffbaba !important;
+  border: 2px solid #f5bcf3 !important;
 }
 
 .dark .male {

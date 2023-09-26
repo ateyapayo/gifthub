@@ -60,3 +60,7 @@
 .title-list {
   color: black;
 }
+
+.dark .title-list {
+  color: white;
+}

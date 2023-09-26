@@ -25,7 +25,7 @@
 
 .dark .logo a,
 .dark .logo a:visited {
-  color: #000000;
+  color: white;
 }
 
 .dark .dark .logo .header h1 {
@@ -40,4 +40,8 @@
 
 .opening {
   color: black;
+}
+
+.dark .opening {
+  color: white;
 }
