@@ -45,7 +45,7 @@ const get_packed_items = () => {
 const add_packed_item = (packedItem) => {
   const packedItems = get_packed_items();
   packedItems.push(packedItem);
-  db["packedItems"] = packedItems;
+  db["wishlist"] = packedItems;
 };
 
 const remove_packed_item = (packedItemId) => {
@@ -53,7 +53,7 @@ const remove_packed_item = (packedItemId) => {
   const updatedPackedItems = packedItems.filter(
     (item) => item.id !== Number.parseInt(packedItemId)
   );
-  db["packedItems"] = updatedPackedItems;
+  db["wishlist"] = updatedPackedItems;
 };
 
 const update_packed_item = (itemId, updatedQuantity) => {
@@ -69,7 +69,7 @@ const update_packed_item = (itemId, updatedQuantity) => {
     item.id === packedItemToUpdate.id ? packedItemToUpdate : item
   );
 
-  db["packedItems"] = updatedPackedItems;
+  db["wishlist"] = updatedPackedItems;
 
   return packedItemToUpdate;
 };
