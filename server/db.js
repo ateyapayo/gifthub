@@ -11,17 +11,17 @@ const initialise_db = () => {
   console.log("db initialised");
 };
 
-// Trip
+// Gender
 
-const get_trip = () => {
-  return db["trip"];
+const get_gender = () => {
+  return db["gender"];
 };
 
-const update_trip = (trip) => {
+const update_gender = (gender) => {
   // Use of spread operator to merge the new trip data with the existing trip data
-  db["trip"] = {
-    ...db.trip,
-    ...trip,
+  db["gender"] = {
+    ...db.gender,
+    ...gender,
   };
 };
 
@@ -76,8 +76,8 @@ const update_packed_item = (itemId, updatedQuantity) => {
 
 module.exports = {
   initialise_db,
-  get_trip,
-  update_trip,
+  get_gender,
+  update_gender,
   get_items,
   get_item_by_id,
   get_packed_items,

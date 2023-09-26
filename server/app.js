@@ -3,8 +3,8 @@ const {
   initialise_db,
   get_items,
   get_item_by_id,
-  get_trip,
-  update_trip,
+  get_gender,
+  update_gender,
   get_packed_items,
   add_packed_item,
   remove_packed_item,
@@ -20,22 +20,22 @@ app.use(cors());
 
 initialise_db();
 
-// Trip
+// Gender
 
-// We're initialising trip as a let, since it can't be a const in /trip anymore - we'll need it both in /trip and /items.
-let trip;
+// We're initialising gender as a let, since it can't be a const in /trip anymore - we'll need it both in /trip and /items.
+let gender;
 
-app.get("/trip", (req, res) => {
-  trip = get_trip();
+app.get("/gender", (req, res) => {
+  gender = get_gender();
   res.status(200);
-  res.json(trip);
+  res.json(gender);
 });
 
-app.patch("/trip", (req, res) => {
-  trip = req.body;
-  update_trip(trip);
+app.patch("/gender", (req, res) => {
+  gender = req.body;
+  update_gender(gender);
   res.status(200);
-  res.json(trip);
+  res.json(gender);
 });
 
 // Items
@@ -43,11 +43,9 @@ app.patch("/trip", (req, res) => {
 app.get("/items", (req, res) => {
   const items = get_items();
 
-  if (trip && trip.weatherConditions) {
+  if (gender && gender.genderType) {
     const filteredItems = items.filter(
-      (item) =>
-        item.appropriateWeather === trip.weatherConditions ||
-        item.appropriateWeather === "any"
+      (item) => item.gender === gender.genderType
     );
     res.status(200).json(filteredItems);
   } else {

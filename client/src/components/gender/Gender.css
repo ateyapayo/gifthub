@@ -1,28 +1,28 @@
-.trip h3 span {
+.gender h3 span {
   color: #006daa;
 }
 
-.dark .trip h3 span {
+.dark .gender h3 span {
   color: #108dd5;
 }
 
-.weather {
+.gender {
   display: flex;
   flex-direction: column;
 }
 
-.weather-buttons {
+.gender-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.weather p {
+.gender p {
   margin-right: 12px;
   font-weight: 700;
 }
 
-.weather button {
+.gender button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,21 +33,25 @@
   background-color: transparent;
 }
 
-.weather button:hover {
+.gender button:hover {
   cursor: pointer;
 }
 
-.weather button svg {
+.gender button svg {
   width: 25px;
   height: 25px;
 }
 
-.sunny {
-  background-color: #ffcc80 !important;
+.male {
+  background-color: #89c0de !important;
 }
 
-.rainy {
-  background-color: #a9d0f5 !important;
+.female {
+  background-color: #ffbaba !important;
+}
+
+.non-binary {
+  background-color: #fce46a !important;
 }
 
 .dark button {
@@ -55,20 +59,25 @@
   border: 2px solid #f0f0f0;
 }
 
-.dark .sunny,
-.dark .rainy {
+.dark .male,
+.dark .female,
+.dark .non-binary {
   color: #121212;
 }
 
-.dark .rainy {
-  border: 2px solid #a9d0f5 !important;
+.dark .female {
+  border: 2px solid #ffbaba !important;
 }
 
-.dark .sunny {
-  border: 2px solid #ffcc80 !important;
+.dark .male {
+  border: 2px solid #89c0de !important;
 }
 
-.clear-weather {
+.dark .non-binary {
+  border: 2px solid #ffea71 !important;
+}
+
+.clear-gender {
   text-decoration: underline;
   cursor: pointer;
 }

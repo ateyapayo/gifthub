@@ -5,7 +5,7 @@ import "./App.css";
 import { ThemeProvider } from "./context/ThemeContext";
 
 import Header from "./components/header/Header";
-import Trip from "./components/trip/Trip";
+import Gender from "./components/gender/Gender";
 import Items from "./components/items/Items";
 import Footer from "./components/footer/Footer";
 
@@ -16,7 +16,7 @@ const App = () => {
     <ThemeProvider>
       <div className="App">
         <Header />
-        <Trip update={setTrigger} />
+        <Gender update={setTrigger} />
         <Items update={setTrigger} reload={trigger} />
         <Footer />
       </div>
