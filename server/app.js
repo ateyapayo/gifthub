@@ -3,8 +3,8 @@ const {
   initialise_db,
   get_items,
   get_item_by_id,
-  get_gender,
-  update_gender,
+  get_target,
+  update_target,
   get_packed_items,
   add_packed_item,
   remove_packed_item,
@@ -23,19 +23,19 @@ initialise_db();
 // Gender
 
 // We're initialising gender as a let, since it can't be a const in /trip anymore - we'll need it both in /trip and /items.
-let gender;
+let target;
 
-app.get("/gender", (req, res) => {
-  gender = get_gender();
+app.get("/target", (req, res) => {
+  target = get_target();
   res.status(200);
-  res.json(gender);
+  res.json(target);
 });
 
-app.patch("/gender", (req, res) => {
-  gender = req.body;
-  update_gender(gender);
+app.patch("/target", (req, res) => {
+  target = req.body;
+  update_target(target);
   res.status(200);
-  res.json(gender);
+  res.json(target);
 });
 
 // Items
@@ -43,10 +43,8 @@ app.patch("/gender", (req, res) => {
 app.get("/items", (req, res) => {
   const items = get_items();
 
-  if (gender && gender.genderType) {
-    const filteredItems = items.filter(
-      (item) => item.gender === gender.genderType
-    );
+  if (target && target.gender) {
+    const filteredItems = items.filter((item) => item.gender === target.gender);
     res.status(200).json(filteredItems);
   } else {
     res.status(200).json(items);

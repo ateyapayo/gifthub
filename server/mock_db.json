@@ -1,6 +1,8 @@
 {
-  "gender": {
-    "type": ""
+  "target": {
+    "age": "any",
+    "gender": "",
+    "personality": "any"
   },
   "items": [
     {

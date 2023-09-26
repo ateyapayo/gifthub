@@ -1,31 +1,31 @@
 import "./Gender.css";
 
-import { getGender, updateGender } from "../../api/gender";
+import { getTarget, updateTarget } from "../../api/target";
 import { useEffect, useState } from "react";
 
 import { IoMaleSharp, IoFemaleSharp, IoMaleFemaleSharp } from "react-icons/io5";
 
 const Gender = (props) => {
-  const [gender, setGender] = useState({
-    genderType: "",
+  const [target, setTarget] = useState({
+    gender: "",
   });
 
-  const fetchGender = async () => {
-    const gender = await getGender();
-    setGender(gender);
+  const fetchTarget = async () => {
+    const target = await getTarget();
+    setTarget(target);
   };
 
-  const onClickGender = async (gender) => {
-    const updatedGender = await updateGender({
-      ...gender,
-      genderType: gender,
+  const onClickGender = async (target) => {
+    const updatedTarget = await updateTarget({
+      ...target,
+      gender: target,
     });
-    setGender(updatedGender);
-    props.update(gender);
+    setTarget(updatedTarget);
+    props.update(target);
   };
 
   useEffect(() => {
-    fetchGender();
+    fetchTarget();
   }, []);
 
   return (
@@ -35,7 +35,7 @@ const Gender = (props) => {
         <div className="gender-buttons">
           <button
             title="Non-binary"
-            className={`${gender.genderType === "non-binary" && "non-binary"}`}
+            className={`${target.gender === "non-binary" && "non-binary"}`}
             aria-label="Non-binary gender button"
             onClick={() => onClickGender("non-binary")}
           >
@@ -43,7 +43,7 @@ const Gender = (props) => {
           </button>
           <button
             title="Female"
-            className={`${gender.genderType === "female" && "female"}`}
+            className={`${target.gender === "female" && "female"}`}
             aria-label="Female gender button"
             onClick={() => onClickGender("female")}
           >
@@ -51,14 +51,14 @@ const Gender = (props) => {
           </button>
           <button
             title="Male"
-            className={`${gender.genderType === "male" && "male"}`}
+            className={`${target.gender === "male" && "male"}`}
             aria-label="Male gender button"
             onClick={() => onClickGender("male")}
           >
             <IoMaleSharp />
           </button>
 
-          {gender.genderType && (
+          {target.gender && (
             <span
               className="clear-gender"
               aria-label="Reset gender button"
