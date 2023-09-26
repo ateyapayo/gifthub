@@ -1,13 +1,10 @@
 import { useState } from "react";
 
-import {
-  MdFamilyRestroom,
-  MdOutlineAddCircle,
-  MdOutlineRemoveCircle,
-  MdOutlineViewList,
-} from "react-icons/md";
+import { MdOutlineAddCircle, MdOutlineRemoveCircle } from "react-icons/md";
 
-import { FaUserFriends, FaUserTie } from "react-icons/fa";
+import { IoFlashSharp, IoFastFoodSharp } from "react-icons/io5";
+
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 import { PiListDashesBold } from "react-icons/pi";
 
@@ -41,17 +38,17 @@ const ItemList = (props) => {
     .reduce((sum, value) => sum + value, 0);
 
   const counterEssentials = props.items
-    .filter((item) => item.tags.includes("family"))
+    .filter((item) => item.tags.includes("must-have"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
   const counterSports = props.items
-    .filter((item) => item.tags.includes("friends"))
+    .filter((item) => item.tags.includes("lifestyle"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
   const counterHiking = props.items
-    .filter((item) => item.tags.includes("colleagues"))
+    .filter((item) => item.tags.includes("foods"))
     .map((item) => item.quantity)
     .reduce((sum, value) => sum + value, 0);
 
@@ -104,48 +101,50 @@ const ItemList = (props) => {
           <span className="counter">
             {props.packed && counterAll > 0 && `(${counterAll})`}
           </span>
-        </button>
+        </button>{" "}
         <button
-          title="See essential items"
+          title="See hiking items"
           className={`${
-            selectedTag === "family" && props.items.length > 0 ? "active" : ""
+            selectedTag === "foods" && props.items.length > 0 ? "active" : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("family")}
+          onClick={() => handleTagFilter("foods")}
         >
-          <MdFamilyRestroom className="icon-category" />
-          Family{" "}
+          <IoFastFoodSharp className="icon-category" /> Foods{" "}
           <span className="counter">
-            {props.packed && counterEssentials > 0 && `(${counterEssentials})`}
+            {props.packed && counterHiking > 0 && `(${counterHiking})`}
           </span>
-        </button>
+        </button>{" "}
         <button
           title="See sports items"
           className={`${
-            selectedTag === "friends" && props.items.length > 0 ? "active" : ""
+            selectedTag === "lifestyle" && props.items.length > 0
+              ? "active"
+              : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("friends")}
+          onClick={() => handleTagFilter("lifestyle")}
         >
-          <FaUserFriends className="icon-category" />
-          Friends{" "}
+          <IoFlashSharp className="icon-category" />
+          Lifestyle{" "}
           <span className="counter">
             {props.packed && counterSports > 0 && `(${counterSports})`}
           </span>
         </button>
         <button
-          title="See hiking items"
+          title="See essential items"
           className={`${
-            selectedTag === "colleagues" && props.items.length > 0
+            selectedTag === "must-have" && props.items.length > 0
               ? "active"
               : ""
           }`}
           disabled={props.items.length === 0}
-          onClick={() => handleTagFilter("colleagues")}
+          onClick={() => handleTagFilter("must-have")}
         >
-          <FaUserTie className="icon-category colleagues" /> Colleagues{" "}
+          <FaHandHoldingHeart className="icon-category" />
+          Must-have{" "}
           <span className="counter">
-            {props.packed && counterHiking > 0 && `(${counterHiking})`}
+            {props.packed && counterEssentials > 0 && `(${counterEssentials})`}
           </span>
         </button>
       </div>
@@ -206,7 +205,7 @@ const ItemList = (props) => {
 
         {props.items.length === 0 && (
           <div className="empty">
-            <p>Your suitcase is empty</p>
+            <p>Ho, ho no... I see no gifts in here.</p>
           </div>
         )}
         {props.items.length > 0 && filteredItems.length === 0 && (

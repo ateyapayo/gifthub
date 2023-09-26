@@ -34,7 +34,7 @@ const Items = (props) => {
     <div className="items">
       <div className="suggested-container">
         <div className="suggested-heading">
-          <h3 className="title-list">Suggested Items</h3>
+          <h3 className="title-list">Suggested Gifts</h3>
           <SearchBar getterSearch={search} setterSearch={setSearch} />
         </div>
         <ItemList
@@ -47,7 +47,7 @@ const Items = (props) => {
       </div>
 
       <div className="suitcase-container">
-        <h3 className="title-list">Your Suitcase</h3>
+        <h3 className="title-list">Santa's Wishlist</h3>
         <ItemList
           items={packedItems}
           packed={true}

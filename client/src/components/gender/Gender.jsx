@@ -30,15 +30,6 @@ const Gender = (props) => {
 
   return (
     <div className="gender">
-      <div>
-        <h3 aria-label="Your destination" title="Your destination">
-          Your trip to <span></span> begins here!{" "}
-        </h3>
-        <h3 aria-label="Your trip title" title="Your trip title">
-          {" "}
-          It's time to pack your things for your <span></span>.
-        </h3>
-      </div>
       <div className="weather">
         <p>Gender</p>
         <div className="gender-buttons">
