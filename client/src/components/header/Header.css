@@ -45,3 +45,11 @@
 .dark .opening {
   color: white;
 }
+
+.opening span {
+  color: white;
+}
+
+.dark .opening span {
+  color: #f52f40;
+}
