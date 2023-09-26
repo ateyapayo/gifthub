@@ -68,26 +68,26 @@ app.get("/items/:id", (req, res) => {
 
 // Packed Items
 
-app.get("/packed-items", (req, res) => {
+app.get("/wishlist", (req, res) => {
   const items = get_packed_items();
   res.status(200);
   res.json(items);
 });
 
-app.post("/packed-items", (req, res) => {
+app.post("/wishlist", (req, res) => {
   packedItem = req.body;
   add_packed_item(packedItem);
   res.status(200);
   res.json(packedItem);
 });
 
-app.delete("/packed-items/:id", (req, res) => {
+app.delete("/wishlist/:id", (req, res) => {
   const packedItemId = req.params.id;
   remove_packed_item(packedItemId);
   res.status(200).send();
 });
 
-app.patch("/packed-items/:id", (req, res) => {
+app.patch("/wishlist/:id", (req, res) => {
   const itemId = req.params.id;
   const updatedQuantity = req.body.quantity;
   const updatedItem = update_packed_item(itemId, updatedQuantity);
@@ -95,7 +95,7 @@ app.patch("/packed-items/:id", (req, res) => {
   if (updatedItem) {
     res.status(200).json(updatedItem);
   } else {
-    res.status(404).json({ error: "Packed item not found" });
+    res.status(404).json({ error: "Whishlist item not found" });
   }
 });
 

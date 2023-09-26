@@ -49,18 +49,21 @@
   height: 25px;
 }
 
-.male {
+.male,
+.female,
+.non-binary {
   color: black !important;
+}
+
+.male {
   background-color: #89c0de !important;
 }
 
 .female {
-  color: black !important;
   background-color: #f5bcf3 !important;
 }
 
 .non-binary {
-  color: black !important;
   background: #ffea71 !important;
 }
 

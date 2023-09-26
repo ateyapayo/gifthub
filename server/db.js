@@ -39,7 +39,7 @@ const get_item_by_id = (id) => {
 // Packed Items
 
 const get_packed_items = () => {
-  return db["packedItems"];
+  return db["wishlist"];
 };
 
 const add_packed_item = (packedItem) => {

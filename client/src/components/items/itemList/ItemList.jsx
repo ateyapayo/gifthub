@@ -9,10 +9,10 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import { PiListDashesBold } from "react-icons/pi";
 
 import {
-  addPackedItem,
-  removePackedItem,
+  addToWishlist,
+  removeFromWishlist,
   updateQuantity,
-} from "../../../api/packedItems";
+} from "../../../api/wishlist";
 
 import "./ItemList.css";
 
@@ -62,7 +62,7 @@ const ItemList = (props) => {
     };
 
     try {
-      await addPackedItem(packedItem);
+      await addToWishlist(packedItem);
       props.update(item.title);
     } catch (error) {
       console.error("Error adding packed item:", error);
@@ -73,7 +73,7 @@ const ItemList = (props) => {
     const packedItemId = item.id;
 
     try {
-      await removePackedItem(packedItemId);
+      await removeFromWishlist(packedItemId);
       props.update(packedItemId);
     } catch (error) {
       console.error("Error removing packed item:", error);

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { getItems } from "../../api/items";
 
-import { getPackedItems } from "../../api/packedItems";
+import { getWishlist } from "../../api/wishlist";
 
 import SearchBar from "./itemList/search/SearchBar";
 
@@ -21,7 +21,7 @@ const Items = (props) => {
   };
 
   const fetchPackedItems = async () => {
-    const items = await getPackedItems();
+    const items = await getWishlist();
     setPackedItems(items);
   };
 
