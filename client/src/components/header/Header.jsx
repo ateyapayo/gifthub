@@ -28,13 +28,16 @@ const Header = () => {
 
       <div className="opening">
         <h3>
-          "Ho, Ho Ho! Christmas is just <span>{daysLeft} days</span> away!
+          <i>
+            "Ho, Ho Ho! <br />
+            Christmas is just <span>{daysLeft} days</span> away!"
+          </i>
         </h3>
         <h3> Stuck on what to give your loved ones? Fear not!</h3>
         <h3>
           {" "}
           Discover the perfect presents with our curated collection of 100+ gift
-          ideas."
+          ideas.
         </h3>
       </div>
     </>

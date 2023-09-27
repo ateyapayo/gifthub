@@ -18,11 +18,10 @@ const Gender = (props) => {
 
   const onClickGender = async (target) => {
     const updatedTarget = await updateTarget({
-      ...target,
       gender: target,
     });
     setTarget(updatedTarget);
-    props.update(target);
+    props.update(updatedTarget);
   };
 
   useEffect(() => {

@@ -41,6 +41,7 @@
 
 .item-list .item p {
   margin: 0;
+  margin-right: 1em;
   color: black;
   font-size: 16px;
   font-weight: 500;

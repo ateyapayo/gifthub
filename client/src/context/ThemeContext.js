@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
 
   const toggle = () => {
     const newMode = mode === "dark" ? "light" : "dark";
@@ -21,7 +21,7 @@ export const ThemeProvider = ({ children }) => {
       setMode("dark");
       localStorage.setItem("modeMyPack", "dark");
     } else if (!window.location.hash) {
-      setMode(savedMode || "dark");
+      setMode(savedMode || "light");
     }
   }, []);
 

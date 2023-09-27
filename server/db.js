@@ -13,14 +13,14 @@ const initialise_db = () => {
 
 // Gender
 
-const get_target= () => {
+const get_target = () => {
   return db["target"];
 };
 
 const update_target = (target) => {
   // Use of spread operator to merge the new trip data with the existing target data
   db["target"] = {
-    ...db.target,
+    ...db["target"],
     ...target,
   };
 };
