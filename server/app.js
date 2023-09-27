@@ -13,7 +13,7 @@ const {
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
+const PORT = 4000;
 
 app.use(express.json());
 app.use(cors());
@@ -96,7 +96,10 @@ app.patch("/wishlist/:id", (req, res) => {
   }
 });
 
-app.listen(PORT, (error) => {
-  if (!error) console.log("Server is running. Listening on port " + PORT);
-  else console.log("Error occurred, server can't start", error);
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `);
+});
+
+app.get("/", (req, res) => {
+  res.send("Hey this is my GiftHub API running 🥳");
 });
