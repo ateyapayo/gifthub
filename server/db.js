@@ -18,7 +18,7 @@ const get_target= () => {
 };
 
 const update_target = (target) => {
-  // Use of spread operator to merge the new trip data with the existing trip data
+  // Use of spread operator to merge the new trip data with the existing target data
   db["target"] = {
     ...db.target,
     ...target,
@@ -36,42 +36,42 @@ const get_item_by_id = (id) => {
   return items.find((item) => item.id === Number.parseInt(id));
 };
 
-// Packed Items
+// Wishlist Items
 
-const get_packed_items = () => {
+const get_wishlist_items = () => {
   return db["wishlist"];
 };
 
-const add_packed_item = (packedItem) => {
-  const packedItems = get_packed_items();
-  packedItems.push(packedItem);
-  db["wishlist"] = packedItems;
+const add_wishlist_item = (wishlistItem) => {
+  const wishlistItems = get_wishlist_items();
+  wishlistItems.push(wishlistItem);
+  db["wishlist"] = wishlistItems;
 };
 
-const remove_packed_item = (packedItemId) => {
-  const packedItems = get_packed_items();
-  const updatedPackedItems = packedItems.filter(
-    (item) => item.id !== Number.parseInt(packedItemId)
+const remove_wishlist_item = (wishlistItemId) => {
+  const wishlistItems = get_wishlist_items();
+  const updatedWishlistItems = wishlistItems.filter(
+    (item) => item.id !== Number.parseInt(wishlistItemId)
   );
-  db["wishlist"] = updatedPackedItems;
+  db["wishlist"] = updatedWishlistItems;
 };
 
-const update_packed_item = (itemId, updatedQuantity) => {
-  const packedItems = get_packed_items();
+const update_wishlist_item = (itemId, updatedQuantity) => {
+  const wishlistItems = get_wishlist_items();
 
-  let packedItemToUpdate = packedItems.find(
+  let wishlistItemToUpdate = wishlistItems.find(
     (item) => item.id === Number.parseInt(itemId)
   );
 
-  packedItemToUpdate.quantity = updatedQuantity;
+  wishlistItemToUpdate.quantity = updatedQuantity;
 
-  const updatedPackedItems = packedItems.map((item) =>
-    item.id === packedItemToUpdate.id ? packedItemToUpdate : item
+  const updatedWishlistItems = wishlistItems.map((item) =>
+    item.id === wishlistItemToUpdate.id ? wishlistItemToUpdate : item
   );
 
-  db["wishlist"] = updatedPackedItems;
+  db["wishlist"] = updatedWishlistItems;
 
-  return packedItemToUpdate;
+  return wishlistItemToUpdate;
 };
 
 module.exports = {
@@ -80,8 +80,8 @@ module.exports = {
   update_target,
   get_items,
   get_item_by_id,
-  get_packed_items,
-  add_packed_item,
-  remove_packed_item,
-  update_packed_item,
+  get_wishlist_items,
+  add_wishlist_item,
+  remove_wishlist_item,
+  update_wishlist_item,
 };

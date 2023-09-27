@@ -5,10 +5,10 @@ const {
   get_item_by_id,
   get_target,
   update_target,
-  get_packed_items,
-  add_packed_item,
-  remove_packed_item,
-  update_packed_item,
+  get_wishlist_items,
+  add_wishlist_item,
+  remove_wishlist_item,
+  update_wishlist_item,
 } = require("./db.js");
 const cors = require("cors");
 
@@ -22,7 +22,6 @@ initialise_db();
 
 // Gender
 
-// We're initialising gender as a let, since it can't be a const in /trip anymore - we'll need it both in /trip and /items.
 let target;
 
 app.get("/target", (req, res) => {
@@ -64,31 +63,31 @@ app.get("/items/:id", (req, res) => {
   res.json(item);
 });
 
-// Packed Items
+// Wishlist Items
 
 app.get("/wishlist", (req, res) => {
-  const items = get_packed_items();
+  const items = get_wishlist_items();
   res.status(200);
   res.json(items);
 });
 
 app.post("/wishlist", (req, res) => {
-  packedItem = req.body;
-  add_packed_item(packedItem);
+  wishlistItem = req.body;
+  add_wishlist_item(wishlistItem);
   res.status(200);
-  res.json(packedItem);
+  res.json(wishlistItem);
 });
 
 app.delete("/wishlist/:id", (req, res) => {
-  const packedItemId = req.params.id;
-  remove_packed_item(packedItemId);
+  const wishlistItemId = req.params.id;
+  remove_wishlist_item(wishlistItemId);
   res.status(200).send();
 });
 
 app.patch("/wishlist/:id", (req, res) => {
   const itemId = req.params.id;
   const updatedQuantity = req.body.quantity;
-  const updatedItem = update_packed_item(itemId, updatedQuantity);
+  const updatedItem = update_wishlist_item(itemId, updatedQuantity);
 
   if (updatedItem) {
     res.status(200).json(updatedItem);

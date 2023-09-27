@@ -50,13 +50,13 @@ const ItemList = (props) => {
     .reduce((sum, value) => sum + value, 0);
 
   const handleAddToWishlist = async (item) => {
-    const packedItem = {
+    const wishlistItem = {
       ...item,
       quantity: 1,
     };
 
     try {
-      await addToWishlist(packedItem);
+      await addToWishlist(wishlistItem);
       props.update(item.title);
     } catch (error) {
       console.error("Error adding packed item:", error);
@@ -145,7 +145,7 @@ const ItemList = (props) => {
       <div className="item-list">
         {filteredItems.map((item) => {
           const isItemPacked = props.referenceList.some(
-            (packedItem) => packedItem.id === item.id
+            (wishlistItem) => wishlistItem.id === item.id
           );
 
           return (
