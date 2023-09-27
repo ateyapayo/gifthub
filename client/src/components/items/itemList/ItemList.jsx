@@ -1,11 +1,8 @@
 import { useState } from "react";
 
 import { MdOutlineAddCircle, MdOutlineRemoveCircle } from "react-icons/md";
-
 import { IoFlashSharp, IoFastFoodSharp } from "react-icons/io5";
-
 import { FaHandHoldingHeart } from "react-icons/fa";
-
 import { PiListDashesBold } from "react-icons/pi";
 
 import {
@@ -181,7 +178,7 @@ const ItemList = (props) => {
 
               {(!props.packed && (
                 <button
-                  title={`Add ${item.title} to the suitcase`}
+                  title={`Add ${item.title} to the wishlist`}
                   onClick={() => !isItemPacked && handleAddToWishlist(item)}
                 >
                   <MdOutlineAddCircle
@@ -190,7 +187,7 @@ const ItemList = (props) => {
                 </button>
               )) || (
                 <button
-                  title={`Remove ${item.title} to the suitcase`}
+                  title={`Remove ${item.title} to the wishlist`}
                   onClick={() => handleRemoveFromWishlist(item)}
                 >
                   <MdOutlineRemoveCircle className="remove-item" />

@@ -1,9 +1,10 @@
 import "./Gender.css";
 
-import { getTarget, updateTarget } from "../../api/target";
 import { useEffect, useState } from "react";
 
 import { IoMaleSharp, IoFemaleSharp, IoMaleFemaleSharp } from "react-icons/io5";
+
+import { getTarget, updateTarget } from "../../api/target";
 
 const Gender = (props) => {
   const [target, setTarget] = useState({

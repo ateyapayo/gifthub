@@ -36,7 +36,7 @@
 }
 
 .suggested-container,
-.suitcase-container {
+.wishlist-container {
   height: 100%;
   padding: 1em 2em 2em 2em;
   border-radius: 15px;
@@ -47,12 +47,12 @@
   background-color: #f9192c;
 }
 
-.suitcase-container {
+.wishlist-container {
   background-color: #c8e8c8;
 }
 
 .dark .suggested-container,
-.dark .suitcase-container {
+.dark .wishlist-container {
   border: 1.5px solid #ffffff;
   background-color: transparent;
 }

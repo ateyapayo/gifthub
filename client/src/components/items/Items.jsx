@@ -12,7 +12,7 @@ import "./Items.css";
 
 const Items = (props) => {
   const [allItems, setAllItems] = useState([]);
-  const [packedItems, setPackedItems] = useState([]);
+  const [wishlistItems, setWishlistItems] = useState([]);
   const [search, setSearch] = useState("");
 
   const fetchAllItems = async () => {
@@ -20,14 +20,14 @@ const Items = (props) => {
     setAllItems(items);
   };
 
-  const fetchPackedItems = async () => {
+  const fetchWishlistItems = async () => {
     const items = await getWishlist();
-    setPackedItems(items);
+    setWishlistItems(items);
   };
 
   useEffect(() => {
     fetchAllItems();
-    fetchPackedItems();
+    fetchWishlistItems();
   }, [props.reload]);
 
   return (
@@ -40,19 +40,19 @@ const Items = (props) => {
         <ItemList
           items={allItems}
           update={props.update}
-          referenceList={packedItems}
+          referenceList={wishlistItems}
           getterSearch={search}
           setterSearch={setSearch}
         />
       </div>
 
-      <div className="suitcase-container">
+      <div className="wishlist-container">
         <h3 className="title-list">Santa's Wishlist</h3>
         <ItemList
-          items={packedItems}
+          items={wishlistItems}
           packed={true}
           update={props.update}
-          referenceList={packedItems}
+          referenceList={wishlistItems}
         />
       </div>
     </div>
