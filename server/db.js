@@ -3,7 +3,7 @@ const fs = require("fs");
 let db = {};
 
 const initialise_db = () => {
-  let data = fs.readFileSync("mock_db.json");
+  let data = fs.readFileSync("./mock_db.json");
   let dataJSON = JSON.parse(data);
 
   db = dataJSON;
