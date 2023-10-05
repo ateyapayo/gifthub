@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "title": "Personalised Jewelry Box",
+      "title": "Jewelry Box",
       "gender": "female",
       "tags": ["accessories", "friends", "personalized", "jewelry", "lifestyle"]
     },
@@ -351,7 +351,7 @@
     },
     {
       "id": 58,
-      "title": "Full body massage experience",
+      "title": "Full body Massage Experience",
       "gender": "non-binary",
       "tags": ["family", "relax", "lifestyle"]
     },
@@ -381,13 +381,13 @@
     },
     {
       "id": 63,
-      "title": "Outdoor Adventure Experience",
+      "title": "Hiking Experience in Scotland",
       "gender": "non-binary",
       "tags": ["friends", "adventure", "outdoor", "lifestyle"]
     },
     {
       "id": 64,
-      "title": "Subscription to Spotify Premium",
+      "title": "Subscription to Spotify",
       "gender": "non-binary",
       "tags": ["friends", "entertainment", "music", "lifestyle"]
     },
@@ -495,7 +495,7 @@
     },
     {
       "id": 82,
-      "title": "Christmas Pajama Family Set",
+      "title": "Christmas Pyjama Family Set",
       "gender": "non-binary",
       "tags": ["clothing", "Christmas", "family", "must-have"]
     },
@@ -645,7 +645,7 @@
     },
     {
       "id": 107,
-      "title": "Vintage Photography Collection Book",
+      "title": "Vintage Photography Book",
       "gender": "non-binary",
       "tags": ["photography", "friends", "art", "history", "lifestyle"]
     },
@@ -663,7 +663,7 @@
     },
     {
       "id": 110,
-      "title": "Personalised Luxury Umbrella",
+      "title": "Luxury Umbrella",
       "gender": "non-binary",
       "tags": ["city", "family", "rain", "must-have"]
     },
